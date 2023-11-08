@@ -8,7 +8,8 @@
 
 <section id="form-container">
     <!-- modify action later -->
-    <form action="/URL-for-sent-data/" method="POST">
+    <form action="" method="POST">
+        {% csrf_token %}
         <input type="text" name="add-list" placeholder="Enter your to-do">
         <input type="submit" value="OK">
     </form>
