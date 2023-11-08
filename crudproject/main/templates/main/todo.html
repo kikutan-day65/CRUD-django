@@ -14,7 +14,15 @@
 
 <ul>
     {% for item in data %}
-    <li>{{ item }}</li>
+    <li>
+        {{ item }}
+        <a href="#">
+            <button>Update</button>
+        </a>
+        <a href="#">
+            <button>Delete</button>
+        </a>
+    </li>
     {% endfor %}
 </ul>
 
