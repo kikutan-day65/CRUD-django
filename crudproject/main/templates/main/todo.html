@@ -16,7 +16,7 @@
     {% for item in data %}
     <li>
         {{ item }}
-        <a href="#">
+        <a href="{% url 'update-data' item.id %}">
             <button>Update</button>
         </a>
         <a href="#">
