@@ -43,3 +43,10 @@ def update_data(request, pk):
     context = {'form': form, 'data': data}
 
     return render(request, 'main/form.html', context)
+
+
+def delete_data(request, pk):
+    data = ToDoStuff.objects.get(id=pk)
+    data.delete()
+
+    return redirect('home')
