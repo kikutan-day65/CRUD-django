@@ -10,3 +10,6 @@ class ToDoForm(ModelForm):
             'detail',
         ]
         
+        labels = {
+            'stuff': 'Task',
+        }
